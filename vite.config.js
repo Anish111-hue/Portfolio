@@ -12,11 +12,12 @@ export default defineConfig({
     alias: {
       './runtimeConfig': './runtimeConfig.browser',
     },
+    extensions: [".js", ".jsx"],
   },
   optimizeDeps: {
     esbuildOptions: {
       loader: {
-        '.js': 'jsx',
+        '.js': '.jsx',
       },
     },
   },
