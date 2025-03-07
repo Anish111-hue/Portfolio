@@ -1,0 +1,5 @@
+#canvas-holder-id { 
+  margin: 0; 
+  overflow: hidden; 
+  background: linear-gradient(to bottom, #98a6c3, #7788b0); 
+}

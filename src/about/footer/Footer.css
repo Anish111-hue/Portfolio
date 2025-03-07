@@ -1,0 +1,16 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+.text-secondary {
+  color: #FFC448 !important;
+  cursor: pointer;
+}
+
+.text-secondary :hover {
+  cursor: pointer;
+}
