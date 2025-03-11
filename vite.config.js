@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio/',
+  base: '/Portfolio/'/*,
   esbuild: {
     loader: 'jsx',
   },
@@ -20,5 +20,5 @@ export default defineConfig({
         '.js': '.jsx',
       },
     },
-  },
+  },*/
 });

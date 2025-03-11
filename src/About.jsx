@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 function About() {
   const [isHovered, setIsHovered] = useState(true);
 
-  document.querySelector("body").style.backgroundColor = "#ffffff";
+  //document.querySelector("body").style.backgroundColor = "#ffffff";
   useEffect(() => {
     const cursor = document.querySelector(".cursor");
     document.addEventListener("mousemove", (e) => {
