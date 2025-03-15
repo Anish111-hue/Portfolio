@@ -75,7 +75,7 @@ function WorkExperience() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <div>{experiences.length}</div>
+            <div>{experiences.length + 1}</div>
           </motion.div>
 
           {experiences.length % 2 !== 0 ? (
