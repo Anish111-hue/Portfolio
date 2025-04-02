@@ -7,10 +7,18 @@ import resume from "./resume/Anish Koppula.pdf";
 function WorkExperience() {
   return (
     <section className="work-experience">
+      <motion.div 
+        className='exp-text'
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        viewport={{ once: false, amount: 0.2 }}
+      >
       <div className="exp-text">
         <p className="exp-sub-text-light">My Journey</p>
         <h2 className="exp-head-text-light">Work Experience.</h2>
       </div>
+      </motion.div>
       <h2 className="title">Work Experience</h2>
       <div className="timeline">
         {experiences.map((exp, index) => (
@@ -18,10 +26,10 @@ function WorkExperience() {
             {index % 2 === 0 ? (
               <motion.div 
                 className="content"
-                initial={{ opacity: 0, x: -100, rotate: -5 }} // Start position
-                whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Animation when in view
-                transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-                viewport={{ once: false, amount: 0.2 }} // Repeats when scrolled back
+                initial={{ opacity: 0, x: -100, rotate: -5 }}
+                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
               >
                 <h3>{exp.title}</h3>
                 <p className="company">{exp.company}</p>
@@ -42,10 +50,10 @@ function WorkExperience() {
             {index % 2 !== 0 ? (
               <motion.div 
                 className="content"
-                initial={{ opacity: 0, x: 100, rotate: 5 }} // Start position
-                whileInView={{ opacity: 1, x: 0, rotate: 0 }} // Animation when in view
-                transition={{ duration: 0.8, ease: "easeOut" }} // Smooth transition
-                viewport={{ once: false, amount: 0.2 }} // Repeats when scrolled back
+                initial={{ opacity: 0, x: 100, rotate: 5 }}
+                whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: false, amount: 0.2 }}
               >
                 <h3>{exp.title}</h3>
                 <p className="company">{exp.company}</p>

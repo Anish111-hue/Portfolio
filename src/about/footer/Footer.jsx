@@ -10,8 +10,8 @@ function Footer() {
       <div className="row">
         <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
            
-          <a className="text-secondary" onClick={() => openCode("https://www.linkedin.com/in/anish-koppula")}>LinkedIn</a>
-          <div className="row"><div>Mail : koppulaanish111@gmail.com.</div> </div>
+          <a className="text-secondary" onClick={() => openCode("https://www.linkedin.com/in/anish--k/")}>LinkedIn</a>
+          <div className="row"><div>Mail : anishkoppula000@gmail.com.</div> </div>
         </div>
         <div className="col-md-6 text-center text-md-end">
           <span> Designed by </span> 
