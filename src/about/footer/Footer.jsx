@@ -15,7 +15,7 @@ function Footer() {
         </div>
         <div className="col-md-6 text-center text-md-end">
           <span> Designed by </span> 
-          <a className="text-secondary" href="#">Anish Koppula</a>
+          <a className="text-secondary" href="#" onClick={(e) => e.preventDefault()}>Anish Koppula</a>
         </div>
       </div>
     </footer>

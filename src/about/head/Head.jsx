@@ -71,14 +71,14 @@ function Head() {
     >
       <div className={`header1-top ${isTransparent ? "top-tran" : ""}`}>
         <div className='col-lg-5'>
-          <a href="#"><img className="logo1" src = {isTransparent ? logoBlack : logoWhite} alt="no image"></img></a>
+          <a href="#" onClick={(e) => e.preventDefault()} style={{ float: "left" }}><img className="logo1" src = {isTransparent ? logoBlack : logoWhite} alt="no image"></img></a>
         </div>
         <div className=' col-lg-7'>
           <ul className="nav-links">
             <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} onClick={() => navigate("/")} style={{cursor:"pointer"}}>Home</a></li>
-            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#"><Link to="about" smooth={true} duration={500}>About</Link></a></li>
-            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#"><Link to="skills" smooth={true} duration={500}>Skills</Link></a></li>
-            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#"><Link to="Projects" smooth={true} duration={500}>Projects</Link></a></li>
+            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#" onClick={(e) => e.preventDefault()}><Link to="about" smooth={true} duration={500}>About</Link></a></li>
+            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#" onClick={(e) => e.preventDefault()}><Link to="skills" smooth={true} duration={500}>Skills</Link></a></li>
+            <li><a className={`${!isTransparent ? "col-white" : "col-black"}`} href="#" onClick={(e) => e.preventDefault()}><Link to="Projects" smooth={true} duration={500}>Projects</Link></a></li>
           </ul>
         </div>
       </div>

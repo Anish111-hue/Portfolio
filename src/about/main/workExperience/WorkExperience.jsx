@@ -62,8 +62,7 @@ function WorkExperience() {
             ) : null}
           </div>
         ))}
-        {
-          <div key={experiences.length} className={`timeline-item ${experiences.length % 2 === 0 ? "left" : "right"}`}>
+        <div key={experiences.length} style={{ display: "none" }} className={`timeline-item ${experiences.length % 2 === 0 ? "left" : "right"}`}>
           {experiences.length % 2 === 0 ? (
             <motion.div 
               className="content"
@@ -98,7 +97,6 @@ function WorkExperience() {
             </motion.div>
           ) : null}
         </div>
-        }
       </div>
     </section>
   );
